@@ -7,7 +7,7 @@ function Assign-VMGPUPartitionAdapter {
     param(
         [string] $VMName,
         [string] $GPUName = AUTO,
-        [decimal] $GPUResourceAllocationPercentage = 100
+        [decimal] $GPUResourceAllocationPercentage = 50
     )
 
     if ($GPUName -eq "AUTO") {
